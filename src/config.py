@@ -31,13 +31,13 @@ entity_intervals = tuple(b - a for a, b in pairwise(int(1.1**i) for i in range(2
 
 # Langs
 source_lang = 'en'
-target_lang = 'ru'
+target_lang = 'es'
 source_full_lang = 'english'
-target_full_lang = 'russian'
+target_full_lang = 'spanish'
 
 # spaCy models
 source_model = 'en_core_web_lg'
-target_model = 'ru_core_news_lg'  # _lg has 1% better lemmatization than _sm ¯\_(ツ)_/¯
+target_model = 'es_core_news_lg'  # _lg has 1% better lemmatization than _sm ¯\_(ツ)_/¯
 
 # Token processing
 embedding_preprocessing_centering = False
@@ -57,7 +57,7 @@ repeat_original_sentence_after_translated = False
 synthesis_provider = 'GoogleCloud'  # gTTS, CoquiTTS, GoogleCloud
 synthesis_model = 'tts_models/multilingual/multi-dataset/xtts_v2'  # for CoquiTTS only
 source_voice = 'en-US-Wavenet-C'  # en-US-Wavenet-C, Tammie Ema  # for GC and CoquiTTS
-target_voice = 'ru-RU-Wavenet-C'  # for GC only
+target_voice = 'es-MX-Wavenet-C'  # for GC only
 
 sentence_pronunciation_speed = 0.9
 vocabulary_pronunciation_speed = 0.75
